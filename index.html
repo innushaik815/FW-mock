@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Support Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fa;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #026cdf;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      color: #026cdf;
+    }
+    button {
+      background-color: #026cdf;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #014c9b;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to Luxor Support Portal</h1>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2>Submit a Ticket</h2>
+      <p>If you're facing any issues, raise a ticket and we'll get back to you ASAP.</p>
+      <button onclick="submitTicket()">Submit Ticket</button>
+    </div>
+
+    <div class="section">
+      <h2>Check Ticket Status</h2>
+      <p>Track the status of your raised complaints and inquiries.</p>
+      <button onclick="checkStatus()">View Tickets</button>
+    </div>
+
+    <div class="section">
+      <h2>FAQs</h2>
+      <p>Find answers to the most common questions and solutions to common problems.</p>
+      <button onclick="viewFAQs()">Browse FAQs</button>
+    </div>
+  </div>
+
+  <script>
+    function submitTicket() {
+      alert("Redirecting to ticket submission page...");
+      // window.location.href = "submit-ticket.html";
+    }
+
+    function checkStatus() {
+      alert("Redirecting to ticket status page...");
+      // window.location.href = "ticket-status.html";
+    }
+
+    function viewFAQs() {
+      alert("Redirecting to FAQs page...");
+      // window.location.href = "faqs.html";
+    }
+  </script>
+</body>
+</html>
